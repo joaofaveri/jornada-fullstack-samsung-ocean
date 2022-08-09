@@ -7,7 +7,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/joaofaveri/jornada-fullstack-samsung-ocean">
-    <img src="images/mern.png" alt="Jornada Fullstack" width="200">
+    <img src="images/mern.jpg" alt="Jornada Fullstack">
   </a>
 
 <h3 align="center">Jornada Fullstack</h3>
