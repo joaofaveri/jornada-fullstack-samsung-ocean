@@ -24,6 +24,7 @@
   "type": "module",
   "devDependencies": {
     "eslint": "^8.21.0",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
   }
 }
