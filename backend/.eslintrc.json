@@ -14,13 +14,9 @@
     "sourceType": "module"
   },
   "plugins": [
-    "json",
-    "prettier"
+    "json"
   ],
   "rules": {
-    "prettier/prettier": "error",
-    "arrow-body-style": "off",
-    "prefer-arrow-callback": "off",
     "json/*": [
       "error",
       {
