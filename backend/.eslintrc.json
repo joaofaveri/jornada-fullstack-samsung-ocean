@@ -6,6 +6,7 @@
   },
   "extends": [
     "eslint:recommended",
+    "plugin:json/recommended",
     "prettier",
     "plugin:prettier/recommended"
   ],
@@ -14,11 +15,18 @@
     "sourceType": "module"
   },
   "plugins": [
+    "json",
     "prettier"
   ],
   "rules": {
     "prettier/prettier": "error",
     "arrow-body-style": "off",
-    "prefer-arrow-callback": "off"
+    "prefer-arrow-callback": "off",
+    "json/*": [
+      "error",
+      {
+        "allowComments": true
+      }
+    ]
   }
 }
