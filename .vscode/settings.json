@@ -1,5 +1,6 @@
 {
   "workbench.iconTheme": "material-icon-theme",
   "thunder-client.saveToWorkspace": true,
-  "thunder-client.showActivityFromCollection": true
+  "thunder-client.showActivityFromCollection": true,
+  "thunder-client.workspaceRelativePath": "/backend"
 }

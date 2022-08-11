@@ -26,5 +26,19 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "2c632641-fb20-41e0-945e-020add7ca66e",
+    "colId": "history",
+    "containerId": "",
+    "name": "/scores",
+    "url": "http://localhost:3000/scores",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-08-11T14:32:33.095Z",
+    "modified": "2022-08-11T14:46:39.894Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]
