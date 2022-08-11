@@ -8,7 +8,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-08-09T17:40:36.006Z",
-    "modified": "2022-08-11T13:22:01.799Z",
+    "modified": "2022-08-11T15:19:44.961Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -22,7 +22,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-08-09T17:41:04.979Z",
-    "modified": "2022-08-11T13:21:57.188Z",
+    "modified": "2022-08-11T15:19:39.893Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -36,9 +36,28 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-08-11T14:32:33.095Z",
-    "modified": "2022-08-11T14:46:39.894Z",
+    "modified": "2022-08-11T15:20:04.572Z",
     "headers": [],
     "params": [],
+    "tests": []
+  },
+  {
+    "_id": "4f38daa4-f916-4c21-af83-7aed0a842575",
+    "colId": "history",
+    "containerId": "",
+    "name": "/scores",
+    "url": "http://localhost:3000/scores",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-08-11T14:51:08.757Z",
+    "modified": "2022-08-11T15:23:32.128Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Outrano\",\n  \"score\": 100\n}",
+      "form": []
+    },
     "tests": []
   }
 ]
