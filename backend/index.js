@@ -46,7 +46,6 @@ app.post('/scores', (req, res) => {
     id: highScores.length + 1,
     ...score
   })
-  console.log(highScores)
   res.json(highScores)
 })
 
