@@ -17,6 +17,7 @@
     "json"
   ],
   "rules": {
+    "prettier/prettier": "error",
     "json/*": [
       "error",
       {
