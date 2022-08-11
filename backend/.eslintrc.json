@@ -7,7 +7,6 @@
   "extends": [
     "eslint:recommended",
     "plugin:json/recommended",
-    "prettier",
     "plugin:prettier/recommended"
   ],
   "parserOptions": {
