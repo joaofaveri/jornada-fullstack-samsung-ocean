@@ -26,14 +26,14 @@ Entenda de uma vez por todas o que é backend e quais são as tecnologias envolv
 
 ## Cronograma das Aulas
 
-- **09/08/2022:** Backend com `NodeJs` e `Express` (Parte 1)
-- **11/08/2022:** Backend com `NodeJs` e `Express` (Parte 2)
-- **16/08/2022:** Laboratório de Backend com Banco de Dados e `MongoDB`
-- **18/08/2022:** Integrando os serviços de backend na nuvem
-- **22/08/2022:** Frontend Web com `ReactJS`: Introdução (Parte 1)
-- **23/08/2022:** Frontend Web com `ReactJS`: Introdução (Parte 2)
-- **31/08/2022:** Frontend Web com `ReactJS`: Integração com Backend (Parte 1)
-- **01/09/2022:** Frontend Web com `ReactJS`: Integração com Backend (Parte 2)
+- [x] **09/08/2022:** Backend com `NodeJs` e `Express` (Parte 1)
+- [x] **11/08/2022:** Backend com `NodeJs` e `Express` (Parte 2)
+- [ ] **16/08/2022:** Laboratório de Backend com Banco de Dados e `MongoDB`
+- [ ] **18/08/2022:** Integrando os serviços de backend na nuvem
+- [ ] **22/08/2022:** Frontend Web com `ReactJS`: Introdução (Parte 1)
+- [ ] **23/08/2022:** Frontend Web com `ReactJS`: Introdução (Parte 2)
+- [ ] **31/08/2022:** Frontend Web com `ReactJS`: Integração com Backend (Parte 1)
+- [ ] **01/09/2022:** Frontend Web com `ReactJS`: Integração com Backend (Parte 2)
 
 ## Tópicos
 
