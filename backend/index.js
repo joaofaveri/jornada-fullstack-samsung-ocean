@@ -8,7 +8,7 @@ async function main() {
   // Realizar a conexão com o MongoClient
   // MongoClient -> MongoDatabase -> MongoCollection
   // Conexões podem levar um tempo para concluir
-  // Utilizar Promisses
+  // Utilizar Promises
 
   console.log('Connecting to database...')
 
@@ -36,7 +36,7 @@ async function main() {
   app.get('/scores', async (req, res) => {
     const itens = await collectionScores
       .find()
-      .sort({score: -1})
+      .sort({ score: -1 })
       .limit(10)
       .toArray()
     res.json(itens)
