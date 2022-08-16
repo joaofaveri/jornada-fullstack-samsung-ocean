@@ -1,0 +1,6 @@
+use('jornada-fullstack-agosto-22');
+db.scores.insertMany([
+  { 'name': 'Fulano', 'score': 100 },
+  { 'name': 'Ciclano', 'score': 90 },
+  { 'name': 'Beltrano', 'score': 80 },
+]);

@@ -1,0 +1,9 @@
+use('jornada-fullstack-agosto-22');
+
+db.scores.findOne({
+  'name': 'Fulano'
+});
+
+db.scores.find({
+  'score': { $gt: 85}
+});
