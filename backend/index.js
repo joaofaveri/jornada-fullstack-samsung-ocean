@@ -39,14 +39,12 @@ async function main() {
   })
 
   // Create - POST - /scores
-  app.post('/scores', (req, res) => {
+  app.post('/scores', async (req, res) => {
     const score = req.body
     // Inserir o score na Lista
-    highScores.push({
-      id: highScores.length + 1,
-      ...score
-    })
-    res.json(highScores)
+    await collectionScores.insertOne(score)
+
+    res.json(score)
   })
 
   app.listen(3000, () => console.log(`Server is running in port 3000`))
