@@ -34,7 +34,11 @@ async function main() {
   // Endpoints scores:
   // Read All - GET - /scores
   app.get('/scores', async (req, res) => {
-    const itens = await collectionScores.find().toArray()
+    const itens = await collectionScores
+      .find()
+      .sort({score: -1})
+      .limit(10)
+      .toArray()
     res.json(itens)
   })
 
@@ -43,7 +47,6 @@ async function main() {
     const score = req.body
     // Inserir o score na Lista
     await collectionScores.insertOne(score)
-
     res.json(score)
   })
 
