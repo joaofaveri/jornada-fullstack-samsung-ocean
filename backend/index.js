@@ -10,9 +10,13 @@ async function main() {
   // Conexões podem levar um tempo para concluir
   // Utilizar Promisses
 
+  console.log('Connecting to database...')
+
   const client = await MongoClient.connect(url)
   const database = client.db(databaseName)
-  const collection = database.collection('scores')
+  const collectionScores = database.collection('scores')
+
+  console.log('Database connected!')
 
   const app = express()
 
@@ -27,29 +31,11 @@ async function main() {
     res.send('Olá, Mundo!')
   })
 
-  // Lista com as pontuações
-  const highScores = [
-    {
-      id: 1,
-      name: 'Fulano',
-      score: 90
-    },
-    {
-      id: 2,
-      name: 'Ciclano',
-      score: 80
-    },
-    {
-      id: 3,
-      name: 'Beltrano',
-      score: 70
-    }
-  ]
-
   // Endpoints scores:
   // Read All - GET - /scores
-  app.get('/scores', (req, res) => {
-    res.json(highScores)
+  app.get('/scores', async (req, res) => {
+    const itens = await collectionScores.find().toArray()
+    res.json(itens)
   })
 
   // Create - POST - /scores
