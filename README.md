@@ -30,6 +30,7 @@ Entenda de uma vez por todas o que é backend e quais são as tecnologias envolv
 - [x] **11/08/2022:** Backend com `NodeJs` e `Express` (Parte 2)
 - [x] **16/08/2022:** Laboratório de Backend com Banco de Dados e `MongoDB`
 - [ ] **18/08/2022:** Integrando os serviços de backend na nuvem
+  - Ausente da aula, mas seguindo o repositório do professor, fiz os ajustes na aplicação e hospedei no Heroku, no link [https://mighty-beyond-51506.herokuapp.com/](https://mighty-beyond-51506.herokuapp.com/scores) 
 - [ ] **22/08/2022:** Frontend Web com `ReactJS`: Introdução (Parte 1)
 - [ ] **23/08/2022:** Frontend Web com `ReactJS`: Introdução (Parte 2)
 - [ ] **31/08/2022:** Frontend Web com `ReactJS`: Integração com Backend (Parte 1)

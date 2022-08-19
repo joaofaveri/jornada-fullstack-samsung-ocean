@@ -1,7 +1,8 @@
 import express from 'express'
 import { MongoClient } from 'mongodb'
 
-const url = 'mongodb+srv://admin:Gy5zDAq7cqiKTVCz@jornada-fullstack-agost.oterozr.mongodb.net/'
+const url =
+  'mongodb+srv://admin:Gy5zDAq7cqiKTVCz@jornada-fullstack-agost.oterozr.mongodb.net/'
 const databaseName = 'jornada-fullstack-agosto-22'
 
 async function main() {
@@ -50,7 +51,9 @@ async function main() {
     res.json(score)
   })
 
-  app.listen(process.env.PORT || 3000, () => console.log(`Server is running in port 3000`))
+  app.listen(process.env.PORT || 3000, () =>
+    console.log(`Server is running in port 3000`),
+  )
 }
 
 // Executar a função main()
