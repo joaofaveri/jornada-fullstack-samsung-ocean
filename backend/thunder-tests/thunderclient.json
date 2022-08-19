@@ -50,12 +50,12 @@
     "method": "POST",
     "sortNum": 40000,
     "created": "2022-08-11T14:51:27.069Z",
-    "modified": "2022-08-19T02:51:50.867Z",
+    "modified": "2022-08-19T03:42:58.172Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"name\": \"Fukano\",\n  \"score\": 80\n}",
+      "raw": "{\n  \"name\": \"Ciclano\",\n  \"score\": 90\n}",
       "form": []
     },
     "tests": []
