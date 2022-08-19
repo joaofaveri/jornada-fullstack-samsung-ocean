@@ -1,9 +1,9 @@
 import express from 'express'
 import { MongoClient } from 'mongodb'
+import 'dotenv/config'
 
-const url =
-  'mongodb+srv://admin:Gy5zDAq7cqiKTVCz@jornada-fullstack-agost.oterozr.mongodb.net/'
-const databaseName = 'jornada-fullstack-agosto-22'
+const url = process.env.MONGODB_URL
+const databaseName = process.env.MONGODB_DATABASE
 
 async function main() {
   // Realizar a conexão com o MongoClient
@@ -51,8 +51,8 @@ async function main() {
     res.json(score)
   })
 
-  app.listen(process.env.PORT || 3000, () =>
-    console.log(`Server is running in port 3000`),
+  app.listen(process.env.PORT, () =>
+    console.log(`Server is running in port ${process.env.PORT}`),
   )
 }
 
