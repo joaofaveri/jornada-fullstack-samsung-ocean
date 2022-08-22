@@ -1,0 +1,11 @@
+.game {
+  background: #9be5e4;
+  height: 100vh;
+}
+
+.clouds {
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+}
