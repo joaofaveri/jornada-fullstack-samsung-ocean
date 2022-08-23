@@ -4,8 +4,68 @@
 }
 
 .clouds {
-  width: 200px;
+  width: 100px;
   position: absolute;
   top: 10px;
-  left: 50%;
+  animation-name: move-right-to-left;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.pipeline {
+  height: 25px;
+  position: absolute;
+  bottom: 15px;
+  right: 50px;
+  animation-name: move-right-to-left;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes move-right-to-left {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 100%
+  }
+}
+
+.jump {
+  animation-name: character-jump;
+  animation-duration: .7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes character-jump {
+  from {
+    bottom: 30px;
+  }
+  50% {
+    bottom: 55px;
+  }
+  to {
+    right: 30px
+  }
+}
+
+.character {
+  height: 30px;
+  position: absolute;
+  bottom: 15px;
+  left: 50px;
+}
+
+.ground {
+  position: absolute;
+  width: 250%;
+  bottom: 0px;
+  height: 15px;
+  background-color: forestgreen;
+  animation-name: move-right-to-left;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
