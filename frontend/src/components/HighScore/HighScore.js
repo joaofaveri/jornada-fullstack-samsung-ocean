@@ -1,13 +1,21 @@
+import { useEffect, useState } from 'react'
 import './HighScore.css'
 
 const HighScore = (props) => {
 
-  const setInitFetch = {
-    method: 'GET',
-    mode: 'no-cors'
-  };
+  const [items, setItems] = useState(undefined)
 
-  fetch('https://joaofaveri-jornada-fullstack-samsung-ocean-5gj764r5274w4-3001.githubpreview.dev/scores', setInitFetch).then(console.log())
+  useEffect(() => {
+    const loadScores = async () => {
+      const response = await fetch('https://joaofaveri-jornada-fullstack-samsung-ocean-5gj764r5274w4-3001.githubpreview.dev/scores')
+      const body = await response.json()
+      setItems(body)
+    }
+    loadScores()
+  }, [])
+
+  const itemsLoading = items === undefined
+
 
   return (
     <div className="HighScore">
@@ -17,10 +25,14 @@ const HighScore = (props) => {
 
       <div>
         <h1>HighScore</h1>
+        {itemsLoading ? (<div>Loading...</div>) : (
+          <ul>
+            {items.map((item, index) => {
+              return (<li key={`score_${index}`}>{item.name} - {item.score}</li>)
+            })}
+          </ul>
+        )}
 
-        <div>Paulo - 90 pontos</div>
-        <div>João - 50 pontos</div>
-        <div>Ana - 32 pontos</div>
       </div>
 
       <div>
