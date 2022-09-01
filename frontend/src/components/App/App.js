@@ -17,7 +17,7 @@ const App = () => {
   }
 
   return (
-    <div className={App}>
+    <div>
       <Game onDead={onDead} onScore={onScore} />
       {gameOver && <HighScore score={score} />}
     </div>
