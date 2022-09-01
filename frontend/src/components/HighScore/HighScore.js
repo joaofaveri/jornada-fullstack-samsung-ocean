@@ -2,7 +2,12 @@ import './HighScore.css'
 
 const HighScore = (props) => {
 
-  fetch('https://joaofaveri-jornada-fullstack-samsung-ocean-5gj764r5274w4-3001.githubpreview.dev/scores').then(console.log())
+  const setInitFetch = {
+    method: 'GET',
+    mode: 'no-cors'
+  };
+
+  fetch('https://joaofaveri-jornada-fullstack-samsung-ocean-5gj764r5274w4-3001.githubpreview.dev/scores', setInitFetch).then(console.log())
 
   return (
     <div className="HighScore">
