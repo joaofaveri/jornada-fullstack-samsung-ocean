@@ -1,6 +1,7 @@
 import express from 'express'
 import { MongoClient } from 'mongodb'
 import 'dotenv/config'
+import cors from 'cors'
 
 const url = process.env.MONGODB_URL
 const databaseName = process.env.MONGODB_DATABASE
@@ -21,6 +22,7 @@ async function main() {
 
   const app = express()
 
+  app.use(cors())
   app.use(express.json())
 
   app.get('/', (req, res) => {
