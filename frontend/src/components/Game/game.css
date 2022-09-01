@@ -96,3 +96,7 @@
     left: 0px;
   }
 }
+
+.stop-animation {
+  animation-play-state: paused;
+}
