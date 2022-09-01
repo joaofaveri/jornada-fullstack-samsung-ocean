@@ -1,10 +1,13 @@
 import './HighScore.css'
 
-const HighScore = () => {
+const HighScore = (props) => {
+
+  fetch('https://joaofaveri-jornada-fullstack-samsung-ocean-5gj764r5274w4-3001.githubpreview.dev/scores').then(console.log())
+
   return (
     <div className="HighScore">
       <div>
-        Você fez <b>50</b> pontos!
+        Você fez <b>{ props.score }</b> pontos!
       </div>
 
       <div>

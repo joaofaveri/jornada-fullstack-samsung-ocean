@@ -5,16 +5,21 @@ import './App.css'
 
 const App = () => {
   const [gameOver, setGameOver] = useState(false)
+  const [score, setScore] = useState(0)
 
   const onDead = () => {
     //console.log('App -> onDead');
     setGameOver(true)
   }
 
+  const onScore = (newScore) => {
+    setScore(newScore)
+  }
+
   return (
     <div className={App}>
-      <Game onDead={onDead} />
-      {gameOver && <HighScore />}
+      <Game onDead={onDead} onScore={onScore} />
+      {gameOver && <HighScore score={score} />}
     </div>
   )
 }

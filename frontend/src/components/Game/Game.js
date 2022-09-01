@@ -47,7 +47,7 @@ const Game = (props) => {
       }, 100)
 
       return () => clearInterval(interval)
-    }, [isDead]
+    }, [isDead, props]
   )
 
   // Save score
@@ -59,11 +59,12 @@ const Game = (props) => {
           }
 
           setScore(score + 1)
+          props.onScore(score + 1)
           // console.log({ score });
-        }, 500)
+        }, 100)
       
       return () => clearInterval(interval)
-      }, [isDead, score]
+      }, [isDead, score, props]
     )
 
   document.onkeydown = () => {
@@ -85,8 +86,8 @@ const Game = (props) => {
       <img className="clouds" src={clouds} alt="Clouds" />
       <img ref={pipelineRef} className={"pipeline " + stopAnimation} src={pipeline} alt="Pipeline" />
       <img ref={characterRef} className={characterClassName} src={characterImage} alt="Character" />
-      <div className="ground ground-move-first" name="ground-first" style={{backgroundImage:`url(${ground})`, backgroundRepeat:'repeat-x', backgroundSize:'contain'}}></div>
-      <div className="ground ground-move-last" name="ground-last" style={{backgroundImage:`url(${ground})`, backgroundRepeat:'repeat-x', backgroundSize:'contain'}}></div>
+      <div className={"ground ground-move-first " + stopAnimation} name="ground-first" style={{backgroundImage:`url(${ground})`, backgroundRepeat:'repeat-x', backgroundSize:'contain'}}></div>
+      <div className={"ground ground-move-last " + stopAnimation} name="ground-last" style={{backgroundImage:`url(${ground})`, backgroundRepeat:'repeat-x', backgroundSize:'contain'}}></div>
     </div>
   )
 }
